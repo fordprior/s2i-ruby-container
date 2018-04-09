@@ -4,16 +4,16 @@ get '/' do
   'hello world'
 end
 
-get '/*/format' do
+get '/:text/:format' do
   # matches "GET /hello/reversed" and "GET /goodbye"
   
   case params['format']
     when 'upcase'
-      "#{params[0].upcase}"
+      "#{params['text'].upcase}"
     when 'reversed'
-      "#{params[0].reverse}"
+      "#{params['text'].reverse}"
     else
-      "#{params[0]}"
+      "#{params['text']}"
   end
   
 end
