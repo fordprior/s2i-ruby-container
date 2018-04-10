@@ -1,4 +1,4 @@
-require '../spec_helper.rb'
+require_relative 'spec_helper.rb'
 
 describe 'my sample ruby app' do
   it "says hello" do
