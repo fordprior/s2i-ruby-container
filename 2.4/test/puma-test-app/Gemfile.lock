@@ -11,6 +11,8 @@ GEM
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     tilt (1.4.1)
+    rspec (>=0)
+    rack-test (>=0)
 
 PLATFORMS
   ruby
@@ -18,3 +20,5 @@ PLATFORMS
 DEPENDENCIES
   puma
   sinatra
+  rspec
+  rack-test
